@@ -8,6 +8,12 @@ const helloWorld = function () {
     return "Hello, World!";
 }
 
-function sayHello() {
-
+function sayHello(input) {
+    if (input === false) {
+        return "Hello, World!"
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
+
+

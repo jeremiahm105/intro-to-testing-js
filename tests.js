@@ -17,7 +17,26 @@ describe('helloWorld', function() {
 //unit test for sayHello 
 describe('sayHello', function () {
 
-    it('should be a define function', function () {
-        expect(typeof sayHello).toBe("function")
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe("function");
+    });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return the string "Hello, Jane!" when executed', function () {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+//Question 4
+    it('should return the string "Hello, Alex!" when executed', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
+    it('should return the string "Hello, Pat!" when executed', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
+    it('should return "Hello, World!" when executed', function () {
+        expect(sayHello("World")).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" when executed', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
     });
 });
